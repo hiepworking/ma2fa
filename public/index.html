@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YKTLBCE2ES"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YKTLBCE2ES');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA2FA.COM | Lấy mã OTP (2FA) siêu nhanh, tiện lợi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- SEO DATA -->
+<meta content='ma2fa,mã 2fa, get otp,2fa live, bảo mật facebook' name='keywords'/>
+<meta content='Trang lấy mã 2FA OTP của người Việt - được tạo tự động bởi ChatGPT, vận hành và nâng cấp bởi HiDIGITAL' name='description'/>
+<meta content='MA2FA.COM - Lấy mã OTP (2FA) siêu nhanh, tiện lợi | HiFB Team' property='og:site_name'/>
+<meta content='MA2FA.COM - Lấy mã OTP (2FA) siêu nhanh, tiện lợi | HiFB Team' property='og:title'/>
+<meta content='Trang lấy mã 2FA OTP của người Việt - được tạo tự động bởi ChatGPT, vận hành và nâng cấp bởi HiDIGITAL' property='og:description'/>
+<meta content='https://ma2fa.com/ma2fa.com-sharethumb.png' name='og:image'/>
+<meta content='TMA2FA.COM - Lấy mã OTP (2FA) siêu nhanh, tiện lợi | HiFB Team' name='twitter:title'/>
+<meta content='Trang lấy mã 2FA OTP của người Việt - được tạo tự động bởi ChatGPT, vận hành và nâng cấp bởi HiDIGITAL' name='twitter:description'/>
+<meta content='https://ma2fa.com/ma2fa.com-sharethumb.png' name='twitter:image'/>
+<!-- End SEO DATA -->
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/64b20fb7cc26a871b028815c/1h5boqpig';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<style>
+ body {
+           }
+
+           #success p {
+               margin: 0;
+           }
+
+           .form-group.setting {
+               font-size: 16px;
+               font-weight: bold;
+               padding-left: 12px;
+               line-height: 24px;
+               margin-top: 5px;
+           }
+
+           #success {
+               color: orange;
+               font-style: italic;
+               padding: 5px 20px;
+               display: inline-grid;
+               width: auto;
+               border-radius: 3px;
+               margin-top: 30px;
+               width: 100%;
+               text-align: center;
+               font-weight: 500;
+               justify-content: center;
+               justify-items: start;
+           }
+
+           .loading-text {
+               color: violet;
+           }
+           #loading{margin-top: 20px;}
+
+           .hidigital-logo {
+               color: orange;
+               font-weight: bold;
+               display: inline-block !important;
+           }
+
+           .hidigital-logo span {
+               color: blue;
+           }
+
+           /* Custom Checkbox Styles */
+           .form-checkbox-group {
+               display: flex;
+               flex-direction: row-reverse;
+               align-items: center;
+               justify-content: flex-end;
+           }
+
+           .form-checkbox-group .form-checkbox {
+               opacity: 0;
+               position: absolute;
+           }
+
+           .form-checkbox-group label {
+               padding-left: 10px;
+               margin: 0;
+           }
+           #otp{    font-size: 22px;
+    background: #fffce6;
+    max-width: 150px;
+    text-align: center;
+}
+div#type-secret {
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+#secretKey {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    max-width: 600px;
+    color: #10b981;
+}
+#resuft-viewer {
+    text-align: center;
+    display: none;
+}
+           .form-checkbox-group .form-checkbox-icon {
+               width: 1.2rem;
+               height: 1.2rem;
+               border-radius: 0.25rem;
+               border: 2px solid #E2E8F0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               transition: all 0.3s ease;
+           }
+
+           .form-checkbox-group .form-checkbox-icon svg {
+               fill: none;
+               stroke: white;
+               stroke-width: 3px;
+           }
+
+           .form-checkbox-group .form-checkbox:checked + .form-checkbox-icon {
+               background-color: #4299E1;
+               border-color: #4299E1;
+           }
+
+           /* Custom Margin */
+           .mb-100 {
+               margin-bottom: 100px;
+           }
+
+           .container {
+               width: 100%;
+               max-width: 850px !important;
+           }
+
+           .switch {
+             position: relative;
+             display: inline-block;
+             width: 60px;
+             height: 34px;
+           }
+
+           .switch input { 
+             opacity: 0;
+             width: 0;
+             height: 0;
+           }
+
+           .slider {
+             position: absolute;
+             cursor: pointer;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             background-color: #ccc;
+             -webkit-transition: .4s;
+             transition: .4s;
+           }
+
+           .slider:before {
+             position: absolute;
+             content: "";
+             height: 26px;
+             width: 26px;
+             left: 4px;
+             bottom: 4px;
+             background-color: white;
+             -webkit-transition: .4s;
+             transition: .4s;
+           }
+
+           input:checked + .slider {
+             background-color: #2196F3;
+           }
+
+           input:focus + .slider {
+             box-shadow: 0 0 1px #2196F3;
+           }
+
+           input:checked + .slider:before {
+             -webkit-transform: translateX(26px);
+             -ms-transform: translateX(26px);
+             transform: translateX(26px);
+           }
+
+           /* Rounded sliders */
+           .slider.round {
+             border-radius: 34px;
+           }
+
+           .slider.round:before {
+             border-radius: 50%;
+           }
+           input#otp {
+               max-width: 600px;
+               font-size: 30px;
+               text-align: center;
+               border-color: #f0f0f0;
+               color: orange;
+               /* text-decoration: underline; */
+               text-underline-position: under;
+               letter-spacing: 15px;
+               text-align: center;
+               padding: 3px;
+               font-weight: bold;
+           }
+
+           p.description {
+               text-align: center;
+               font-size: 13.5px;
+               font-weight: normal;
+               margin-top: 10px;
+           }
+           a {
+               color: deepskyblue;
+           }
+           input::placeholder {
+               color: #ccc;
+           }
+      .btn-primary {
+          padding: 0.5rem 5rem;
+      }
+label[for="otp"] span {
+    display: none;
+    color: #af7305;
+}
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-10">
+        <h1 class="text-center text-3xl font-bold mt-8">MA2FA.COM - Lấy mã OTP (2FA) siêu nhanh, tiện lợi</h1>
+        <p class='description text-gray-10'>Được thiết kế để sử dụng nhanh chóng và tiện lợi hơn cho người không chuyên và quản lý nick bằng excel</p>
+
+        <div class="form-group mt-4 center">
+  <button type="button" class="btn btn-primary py-2 px-4 rounded-md bg-green-500 text-white font-bold hover:bg-blue-700" id="pasteButton">Dán</button>
+</div>
+
+
+        <div class="form-group mt-8 center" id="type-secret">
+            <label for="secretKey" class="block mb-2">Nhập Secret Key</label>
+            <input type="text" class="form-control w-full px-4 py-2 rounded-md border border-gray-300" id="secretKey" placeholder="DÁN MÃ 2FA CỦA BẠN...">
+        </div>
+        <div class="form-group mt-4 center">
+            <button type="button" class="btn btn-primary py-2 px-4 rounded-md bg-blue-500 text-white font-bold hover:bg-blue-700" onclick="generateOTP(true)">LẤY MÃ OTP</button><br/>
+        </div>
+        
+        <div class="form-group mt-8" id="resuft-viewer">
+            <label for="otp" class="block mb-2">OTP KẾT QUẢ<span> NHẤN ĐỂ SAO CHÉP</span></label>
+            <input type="text" class="form-control w-full px-4 py-2 rounded-md border border-gray-300" id="otp" readonly>
+        </div>
+        <div id="loading" style="display: none;">
+            <p class="loading-text"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="337px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+<defs>
+  <clipPath id="ldio-vqr19d4u5s-cp" x="0" y="0" width="100" height="100">
+    <path d="M81.3,58.7H18.7c-4.8,0-8.7-3.9-8.7-8.7v0c0-4.8,3.9-8.7,8.7-8.7h62.7c4.8,0,8.7,3.9,8.7,8.7v0C90,54.8,86.1,58.7,81.3,58.7z"></path>
+  </clipPath>
+</defs>
+<path fill="none" stroke="transparent" stroke-width="2.7928" d="M82 63H18c-7.2,0-13-5.8-13-13v0c0-7.2,5.8-13,13-13h64c7.2,0,13,5.8,13,13v0C95,57.2,89.2,63,82,63z"></path>
+<g clip-path="url(#ldio-vqr19d4u5s-cp)">
+  <g>
+    <rect x="-100" y="0" width="25" height="100" fill="#1b75be"></rect>
+    <rect x="-75" y="0" width="25" height="100" fill="#408ee0"></rect>
+    <rect x="-50" y="0" width="25" height="100" fill="#a4c774"></rect>
+    <rect x="-25" y="0" width="25" height="100" fill="#e3f1ff"></rect>
+    <rect x="0" y="0" width="25" height="100" fill="#1b75be"></rect>
+    <rect x="25" y="0" width="25" height="100" fill="#408ee0"></rect>
+    <rect x="50" y="0" width="25" height="100" fill="#a4c774"></rect>
+    <rect x="75" y="0" width="25" height="100" fill="#e3f1ff"></rect>
+    <animateTransform attributeName="transform" type="translate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0;100"></animateTransform>
+  </g>
+</g>
+</svg></p>
+        </div>
+        <div id="success" style="display: none;">
+            <p id="getOTPSuccess">OTP được tạo (hiệu lực 30s, quá hạn hãy nhấn nút tạo lại)</p>
+            <p id="copySuccess" style="display: none;">OTP <span id="otp-copied-value"></span> đã tự động copy!</p>
+        </div>
+        <hr class="my-8"/>
+
+        <h4 class="text-lg text-gray-800">TÙY CHỌN</h4><Br/>
+
+
+
+        <div class="form-group setting">
+  
+
+                    <label class="switch">
+                      <input type="checkbox" id="autoGenerateSwitch" onchange="toggleAutoGenerate()" class="form-checkbox">
+                      <span class="slider round"></span>
+
+                    </label> Tự động tạo OTP sau khi nhập
+                </div>
+
+                <div class="form-group setting">
+               <!--              <div class="form-checkbox-group">
+                                <input type="checkbox" id="autoCopySwitch" onchange="toggleAutoCopy()" class="form-checkbox">   <label for="autoCopySwitch" class="form-checkbox-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg></label>
+                                <label for="autoCopySwitch" class="block mb-2">Tự động copy</label>
+
+                             
+                            </div> -->
+
+                            <label class="switch">
+                              <input type="checkbox" id="autoCopySwitch" onchange="toggleAutoCopy()" class="form-checkbox">
+                              <span class="slider round"></span>
+
+                            </label> Tự động sao chép sau khi nhấn nút tạo
+                    </div>
+
+
+                      <br/>   <br/>
+                  <small class="text-sm text-gray-400 description">
+            Liên hệ <a rel="nofollow" href="https://zalo.me/0969799738">bộ phận kỹ thuật</a> nếu cần hướng dẫn tự lấy mã nhanh (chèn url lấy nhanh trong excel quản lý nick)
+        </small>
+
+<div id="footer" class="mt-8 mb-100">
+            <hr class="my-8 border-gray-300">
+                       <p class="text-center text-green-500 text-lg">Vận hành bởi <span class="hidigital-logo">Hi<span class="text-blue-500">DIGITAL</span></span> tham khảo sản phẩm tại <a href="https://go.hifb.app/hime?utm_source=ma2fa_com&amp;utm_campaign=ma2fa_com_fotter_link&amp;utm_medium=text_link" class="text-blue-500">hifb.app</a><br>
+                       </p>
+                       <br>
+                       <div text-gray-300="" text-sm="" class="text-center text-gray-300 text-sm center">Mã nguồn tiện ích do ChatGPT tạo ra
+           </div>
+            <p class="text-center text-gray-300 text-sm">Săn tài khoản ChatGPT miễn phí tại <a rel="nofollow" href="https://go.hifb.app/higpt-group?utm_source=ma2fa_com&amp;utm_campaign=ma2fa_com_join_cta&amp;utm_medium=text_link" class="text-blue-500">https://zalo.me/g/idfssj669</a></p>
+            <p class="text-center mt-4"><small class="text-gray-300 text-sm">HiDIGITAL là đơn vị sở hữu <b>HiFB Auto Like, HiFB Kết Bạn Địa Phương và bộ công cụ HiTOOLs</b> đa nền tảng <br/><a href="https://go.hifb.app/hiep?utm_source=ma2fa_com&amp;utm_campaign=ma2fa_com_join_cta&amp;utm_medium=text_link" class="text-blue-500">Tuyển dụng</a></small></p>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+                var autoGenerateEnabled = true;
+                var autoCopyEnabled = true;
+                var timeoutId;
+                var hasAutoCopyParam = new URLSearchParams(window.location.search).get('autoCopy');//Check on load
+                function toggleAutoGenerate() {
+                    autoGenerateEnabled = !autoGenerateEnabled;
+                    localStorage.setItem('autoGenerateEnabled', autoGenerateEnabled);
+                }
+
+                function toggleAutoCopy() {
+                    autoCopyEnabled = !autoCopyEnabled;
+                    localStorage.setItem('autoCopyEnabled', autoCopyEnabled);
+                }
+                
+               function generateOTP(autoCopyValue) {
+            var secretKey = $('#secretKey').val();
+
+            if (secretKey) {
+                // Xử lý lại secretKey để tạo mã liền mạch
+                secretKey = secretKey.replace(/\s/g, '').replace(/-/g, '');
+
+                $('#loading').fadeIn("fast");
+                $("#resuft-viewer").hide();
+                $('#success').hide();
+                $('#otp').val('');
+
+                clearTimeout(timeoutId); // Hủy bỏ timeout trước đó (nếu có)
+
+                timeoutId = setTimeout(function() {
+                    $.ajax({
+                        url: '/generateOTP',
+                        type: 'POST',
+                        data: { secretKey: secretKey },
+                        success: function(response) {
+                            $('#loading').hide();
+                            $('#success').fadeIn();
+                            $("#resuft-viewer").fadeIn("fast");
+
+                            $('#otp').val(response.otp);
+                               $('label[for="otp"] span').hide();
+                             $('label[for="otp"] span').fadeIn(2000);
+
+                            if(autoCopyValue){
+                               newCopyOTP();
+                            }
+                 
+                        }
+                    });
+                }, 1000);
+            }
+        }
+
+                $(document).ready(function() {
+         var urlParams = new URLSearchParams(window.location.search);
+         var autoGetOTP = urlParams.get('autoOTP');
+         var secretKeyFromUrl = urlParams.get('key');
+         var autoCopy = urlParams.get('autoCopy');
+
+                if (autoGetOTP === '1') {
+                  autoGenerateEnabled = true;
+                    $('#autoGenerateSwitch').prop('checked', true);
+                    } else if(autoGetOTP === '0'){
+                    autoGenerateEnabled = false;
+                    $('#autoGenerateSwitch').prop('checked', false);
+                    } else {
+                    var storedAutoGenerateEnabled = localStorage.getItem('autoGenerateEnabled');
+                    if (storedAutoGenerateEnabled !== null) {
+                    autoGenerateEnabled = storedAutoGenerateEnabled === 'true';
+                    $('#autoGenerateSwitch').prop('checked', autoGenerateEnabled);
+                    }else{
+                    $('#autoGenerateSwitch').prop('checked', true);
+                    }
+                  }
+
+
+                    if (autoCopy === '1') {
+                        autoCopyEnabled = true;
+                        $('#autoCopySwitch').prop('checked', true);
+                    } else if(autoCopy === '0'){
+                      autoCopyEnabled = false;
+                      $('#autoCopySwitch').prop('checked', false);
+                    } else {
+                        var storedAutoCopyEnabled = localStorage.getItem('autoCopyEnabled');
+                        if (storedAutoCopyEnabled !== null) {
+                            autoCopyEnabled = storedAutoCopyEnabled === 'true';
+                            $('#autoCopySwitch').prop('checked', autoCopyEnabled);
+                        }else{
+                            $('#autoCopySwitch').prop('checked', true);
+                        }
+                    }
+
+                   
+                    if(secretKeyFromUrl){
+                      $('#secretKey').val(secretKeyFromUrl);
+                      if (autoGenerateEnabled) {
+                          generateOTP(false);
+                      } 
+                    }
+                   
+
+                    $('#secretKey').on('input', function() {
+                        clearTimeout(timeoutId); // Hủy bỏ timeout trước đó (nếu có)
+
+                        if (autoGenerateEnabled) {
+                            timeoutId = setTimeout(function(){
+                              generateOTP(true);
+                            }, 500);
+                        }
+                    });
+
+                    // Hàm xử lý khi nút "Dán" được click
+                  $('#pasteButton').click(function() {
+                      navigator.clipboard.readText()
+                          .then(function(text) {
+                              // Xử lý dữ liệu đã dán
+                              $('#secretKey').val(text);
+                               generateOTP(true);
+                          })
+                          .catch(function(err) {
+                              alert('Lỗi khi dán, hãy thử dán thủ công :', err);
+                          });
+                  });
+
+                    $('#otp').on('click', function() {
+                         newCopyOTP();
+                    });
+                });
+
+          function newCopyOTP(){
+            $('#copySuccess').hide();
+                $('#copySuccess').fadeIn("fast",function(){
+                   let otp = $('#otp').val();
+                    $("#otp-copied-value").html("");
+                    $("#otp-copied-value").html(otp);
+                    $('#otp').select();
+                      document.execCommand("copy");
+
+                     
+                        $('#otp').val("Copied !!!");
+                        setTimeout(function(){
+                           $('#otp').val(otp);
+                        },300);
+
+                });
+          }
+    </script>
+</body>
+</html>
